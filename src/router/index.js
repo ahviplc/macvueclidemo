@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Buttons from "../components/Buttons";
+import Buttons from "../components/Buttons"
+import Transitions from "../components/Transitions";
+import OthersEleUI from "../components/OthersEleUI";
 
 Vue.use(VueRouter)
 
@@ -23,6 +25,16 @@ const routes = [
         path: '/buttons',
         name: 'Buttons',
         component: Buttons
+    },
+    {
+        path: '/transitions',
+        name: 'Transitions',
+        component: Transitions
+    },
+    {
+        path: '/othersEleUI',
+        name: 'OthersEleUI',
+        component: OthersEleUI
     }
 ]
 
